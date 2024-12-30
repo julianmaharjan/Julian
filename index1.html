@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Julian Maharjan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @media(max-width:700px){
+            .main{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Main Container */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        .main {
+            background-image: linear-gradient(white,#FFDAD9);
+           
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        /* Navbar Styling */
+        .nav-bar {
+            background-color: #454545;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            text-align: right;
+        }
+
+        .nav-bar a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #B83C08;
+        }
+
+        /* Profile Picture Section */
+        .whole {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .part1 img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description h1 {
+            font-size: 2rem;
+            color: black;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .description h1:nth-child(2) {
+            color: #B83C08;
+            font-size: 2.5rem;
+        }
+
+        .description a {
+            color: #3b5998;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .description a:hover {
+            color: #B83C08;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Qualifications Section */
+        #quality {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #quality h2 {
+            color: #B83C08;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact i {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+        /* Project Section */
+        .photo {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .p1 {
+            width: 300px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .p1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .p1 h2 {
+            font-size: 1.5rem;
+            color: #B83C08;
+            margin-top: 10px;
+        }
+
+        .p1 a {
+            text-decoration: none;
+            color: #B83C08;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .whole {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-bar {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .photo {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #footer{
+            display: block;
+            text-align: center;
+                margin-bottom: 20px;
+                background-color: #454545;
+                padding: 5px;
+                margin: 3px;
+                color: #f9f9f9;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <a href="home.com">Home</a>
+            <a href="project.com">Project</a>
+            <a href="contact.com">Contact</a>
+            <a href="about.com">About</a>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="whole">
+            <div class="part1">
+                <img src="https://scontent.fktm21-2.fna.fbcdn.net/v/t39.30808-6/350662826_633139712082387_650616311437964214_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=VtzWJnuTNC0Q7kNvgG22x7o&_nc_zt=23&_nc_ht=scontent.fktm21-2.fna&_nc_gid=ALUoqkcKVl4NVUagH54gPzr&oh=00_AYAxz8u7Ypg7hcxglNwbpT1H4jUchvTTTEjLE6bIOCT5IQ&oe=67772F00" alt="Julian Maharjan">
+            </div>
+            <div class="description">
+                <h1>WELCOME TO MY PORTFOLIO</h1>
+                <h1>JULIAN MAHARJAN</h1>
+                <div>
+                    <a href="https://www.facebook.com/zullian.maharjan/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about">
+            <p>
+                An enthusiast and learner forever to learn new things and also an individual with a leading
+                capacity. With an adaptive quality to fit in every new environment.
+            </p>
+        </div>
+
+        <!-- Qualifications & Contact -->
+        <div id="quality">
+            <h2>Qualifications</h2>
+            <p>Well-qualified and skilled frontend developer. Also an experienced software designer.</p>
+
+            <h2>Contact</h2>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                <a href="tel:+9779744238004"><i class="fa-solid fa-phone"></i> 9744238004</a>
+                <br>
+                <a href="https://wa.me/9779744238004"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <br>
+                <i class="fa-solid fa-location-dot"></i> Khokana, Lalitpur
+            </table>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="photo">
+            <div class="p1">
+                <img src="msc-in-software-engineering_0 (1).jpg" alt="Project 1">
+                <a href="project1">
+                    <h2>Project 1</h2>
+                </a>
+            </div>
+            <div class="p1">
+                <img src="sss.jpg" alt="Project 2">
+                <a href="project2">
+                    <h2>Project 2</h2>
+                </a>
+            </div>
+            <div class="p1">
+                <img src="jjj.jpg" alt="Project 3">
+                <a href="project3">
+                    <h2>Project 3</h2>
+                </a>
+
+            </div>
+        </div>
+        <div id="footer">
+            ©Copyright 2024
+        </div>
+    </div>
+  
+</body>
+
+</html>
